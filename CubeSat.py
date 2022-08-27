@@ -118,6 +118,5 @@ o = Orbit(100, 6371000+400*1000 , 6371000+400*1000, 6371000+400*1000)
 print(o.o_dot)
 s = SingleAxisCubeSat(5,o)
 pos = s.simulate(1,100,1)
-
 #show_orbit(1,np.linspace(0,2*np.pi,360, endpoint=False))
-show_orbit(1,pos)
+show_orbit(6371000+400*1000,pos,6371000+1992750)
